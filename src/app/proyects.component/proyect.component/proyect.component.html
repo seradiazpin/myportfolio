@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+
+<div class="col s12 m10 push-m1">
+    <div class="card">
+      <div class="card-image">
+        <img src="{{proyect.imgsrc}}">
+        <span class="card-title black">{{proyect.name}}</span>
+      </div>
+      <div class="card-content">
+        <h6>{{proyect.date}}</h6>
+        <p>{{proyect.description}}</p>
+      </div>
+      <div class="card-action">
+        <div class="row">
+          <div *ngFor="let tec of proyect.tecnologies">
+            <span  class="col s2 m2 new badge  {{getColor(tec)}}" data-badge-caption="">{{tec}}</span>
+          </div>
+        </div>
+        <a target="_blank" href="{{proyect.link}}"> Link</a>
+        <a target="_blank" href="{{proyect.github}}"> Codigo</a>
+      </div>
+    </div>
+</div>
+

@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div style="margin-top: 30px;" class="col s2 m2 waves-effect center  tooltipped" data-position="bottom" data-delay="50" [attr.data-tooltip]="skill.description">
+
+  <h6><b>{{skill.name}}</b></h6>
+  <svg viewBox="0 0 128 128">
+    <path [attr.fill]="getColor(skill.name)" [attr.d]="skill.simbol"></path>
+  </svg>
+  <h6>{{skill.time}}</h6>
+</div>
+<div class="col s1 m1"></div>
